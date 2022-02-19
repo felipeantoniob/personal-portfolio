@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@use '../vendors/bootstrap' as b;
+@use '../abstracts/variables' as v;
+
+.scroll-to-top-btn {
+  border-radius: 50%;
+  background-color: v.$surface-color-2;
+  border-color: v.$surface-color-2;
+  color: v.$high-emphasis-text-color;
+  &:focus {
+    box-shadow: none !important;
+  }
+}

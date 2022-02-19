@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$background-color: #121212;
+$error-color: #cf6679;
+$primary-color: #ce93d8;
+$primary-color: #bcccdc;
+$secondary-color: #ffcc80;
+$surface-color: mix($primary-color, $background-color, 8%);
+
+$surface-color: mix($primary-color, $background-color, 8%);
+$surface-color-2: mix($primary-color, $background-color, 20%);
+$surface-color-3: mix($primary-color, $background-color, 70%);
+
+$high-emphasis-text-color: rgba(255, 255, 255, 0.87);
+$medium-emphasis-text-color: rgba(255, 255, 255, 0.6);
+$disabled-text-color: rgba(255, 255, 255, 0.38);
+
+$pink-color: #e91e63;

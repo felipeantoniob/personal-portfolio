@@ -1,0 +1,35 @@
+@use '../vendors/bootstrap' as b;
+@use '../abstracts/variables' as v;
+
+body {
+  background-color: rgb(2, 2, 0);
+  background-color: v.$surface-color;
+  // background-color: v.$background-color;
+  // background-color: #102a43;
+
+  color: v.$high-emphasis-text-color;
+}
+
+.surface {
+  background-color: v.$surface-color;
+}
+
+.bg-dark-2 {
+  background-color: #102a43;
+  background-color: #334e68;
+  background-color: #243b53;
+  // background-color: v.$surface-color;
+  background-color: v.$surface-color-2;
+}
+
+.form-input {
+  background-color: v.$surface-color;
+  background-color: v.$surface-color-2;
+  color: v.$high-emphasis-text-color;
+
+  &:focus {
+    background-color: v.$surface-color;
+    background-color: v.$surface-color-2;
+    color: v.$high-emphasis-text-color;
+  }
+}
