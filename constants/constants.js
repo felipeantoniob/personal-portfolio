@@ -13,7 +13,7 @@ export const projects = [
   {
     title: 'To Do App',
     description:
-      'A simple to do list application built using Next.js and Bootstrap. Users can add items to the list, click them to mark them as complete, and delete items.',
+      'A simple to do list application built using Next.js and Bootstrap. Users can add items to the list, mark items as complete or incomplete, edit items, and delete items.',
     image: 'http://via.placeholder.com/640x360',
     tags: ['react', 'javascript'],
     codeUrl: 'https://github.com/felipeantoniob/next-todo-app',

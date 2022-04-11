@@ -33,3 +33,24 @@ body {
     color: v.$high-emphasis-text-color;
   }
 }
+
+.hover-img {
+  &:hover {
+    img {
+      filter: brightness(50%);
+      transition: all 0.25s cubic-bezier(0.3, 0, 0.4, 1) 0s;
+    }
+    .info-icon {
+      opacity: 1;
+    }
+  }
+}
+
+.info-icon {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

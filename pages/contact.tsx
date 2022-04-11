@@ -88,7 +88,7 @@ const contact = () => {
               </Form.Group>
 
               <div className="d-grid gap-2">
-                <Button size="lg" variant="dark">
+                <Button size="lg" className="btn-submit">
                   Submit
                 </Button>
               </div>
