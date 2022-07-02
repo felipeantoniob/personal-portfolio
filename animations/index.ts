@@ -19,11 +19,25 @@ export const fadeInUp = {
   },
 }
 
-export const stagger = {
-  animate: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
+export const stagger = (staggerTime: number) => {
+  return {
+    visible: {
+      opacity: 1,
+      transition: {
+        when: 'beforeChildren',
+        staggerChildren: staggerTime,
+      },
     },
-  },
+    hidden: {
+      opacity: 0,
+      transition: {
+        when: 'afterChildren',
+      },
+    },
+  }
+}
+
+export const child = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 50 },
 }

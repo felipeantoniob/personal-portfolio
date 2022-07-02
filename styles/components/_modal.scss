@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+
+.project-modal {
+  background-color: v.$background-color;
+  h6 {
+    color: v.$medium-emphasis-text-color;
+  }
+  h2,
+  h5,
+  p {
+    color: v.$high-emphasis-text-color;
+  }
+}

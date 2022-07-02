@@ -5,11 +5,10 @@
 @use '../vendors/bootstrap' as b;
 @use '../abstracts/variables' as v;
 
-.scroll-to-top-btn {
-  border-radius: 50%;
-  background-color: v.$surface-color-2;
-  border-color: v.$surface-color-2;
-  color: v.$high-emphasis-text-color;
+.btn-scroll-to-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 
   position: fixed;
   right: 0;
@@ -17,12 +16,30 @@
   &:focus {
     box-shadow: none !important;
   }
+  color: v.$surface-color-2;
+  background-color: v.$high-emphasis-text-color;
+  border: none;
+  border-radius: 50%;
+  border-color: v.$surface-color-2;
+
+  &:hover {
+    color: v.$surface-color;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.btn-scroll-to-top.fade-in {
+  visibility: visible;
+  opacity: 1;
 }
 
 .btn-submit {
   color: v.$medium-emphasis-text-color;
   background-color: v.$surface-color-2;
-  border: none;
+  // border: none;
+  border: 1px solid #ced4da;
   -webkit-box-shadow: none;
   box-shadow: none;
   &:hover {

@@ -1,0 +1,14 @@
+@use '../vendors/bootstrap' as b;
+@use '../abstracts/variables' as v;
+
+.form-input {
+  background-color: v.$surface-color;
+  background-color: v.$surface-color-2;
+  color: v.$high-emphasis-text-color;
+
+  &:focus {
+    background-color: v.$surface-color;
+    background-color: v.$surface-color-2;
+    color: v.$high-emphasis-text-color;
+  }
+}

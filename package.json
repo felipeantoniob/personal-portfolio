@@ -1,7 +1,23 @@
 {
   "name": "next-portfolio-2022",
-  "private": true,
+  "version": "0.1.0",
+  "description": "Felipe Buencamino's personal portfolio website",
+  "author": "Felipe Antonio Buencamino",
   "license": "MIT",
+  "homepage": "https://github.com/felipeantoniob/https://github.com/felipeantoniob/next-portfolio-2022#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeantoniob/https://github.com/felipeantoniob/next-portfolio-2022.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felipeantoniob/https://github.com/felipeantoniob/next-portfolio-2022/issues"
+  },
+  "engines": {
+    "node": "^14.17.3",
+    "npm": "^6.14.3",
+    "yarn": "^1.22.5"
+  },
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,28 +29,29 @@
     "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1",
     "formik": "^2.2.9",
-    "framer-motion": "^6.2.6",
-    "next": "^12.0.10",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.1.2",
+    "framer-motion": "^6.3.15",
+    "next": "^12.1.6",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "sass": "^1.49.7",
+    "react-icons": "^4.4.0",
+    "sass": "^1.53.0",
     "sharp": "^0.30.3",
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@types/node": "^17.0.17",
-    "@types/react": "^17.0.39",
-    "cypress": "^9.5.3",
-    "eslint": "^8.9.0",
-    "eslint-config-next": "^12.0.10",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "cypress": "^10.2.0",
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
+    "prettier": "^2.7.1",
     "start-server-and-test": "^1.14.0",
-    "typescript": "4.5.5"
+    "typescript": "^4.7.4"
   }
 }

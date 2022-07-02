@@ -3,7 +3,7 @@
 
 body {
   background-color: rgb(2, 2, 0);
-  background-color: v.$surface-color;
+  // background-color: v.$surface-color;
   // background-color: v.$background-color;
   // background-color: #102a43;
 
@@ -22,35 +22,18 @@ body {
   background-color: v.$surface-color-2;
 }
 
-.form-input {
-  background-color: v.$surface-color;
-  background-color: v.$surface-color-2;
-  color: v.$high-emphasis-text-color;
-
-  &:focus {
-    background-color: v.$surface-color;
-    background-color: v.$surface-color-2;
-    color: v.$high-emphasis-text-color;
-  }
-}
-
 .hover-img {
   &:hover {
     img {
       filter: brightness(50%);
       transition: all 0.25s cubic-bezier(0.3, 0, 0.4, 1) 0s;
     }
-    .info-icon {
+    .icon-info {
       opacity: 1;
     }
   }
 }
-
-.info-icon {
+.icon-info {
   opacity: 0;
   transition: all 0.5s;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }

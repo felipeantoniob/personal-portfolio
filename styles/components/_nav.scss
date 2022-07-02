@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+.nav-link {
+  color: v.$high-emphasis-text-color;
+  transition: all 0.2s;
+  &:hover {
+    color: v.$medium-emphasis-text-color;
+  }
+  &:focus {
+    color: v.$high-emphasis-text-color;
+  }
+  &:focus-visible {
+    color: v.$high-emphasis-text-color;
+    border: none;
+    box-shadow: none;
+  }
+}

@@ -11,21 +11,39 @@ const Footer = () => {
     <footer>
       <Container className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <Col md={4} className="d-flex align-items-center">
-          <span className="text-muted">&copy; Designed by Felipe Buencamino, 2022</span>
+          <span className="text-muted">&copy; Designed and Built by Felipe Buencamino, 2022</span>
         </Col>
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li className="ms-3">
-            <a aria-label="github" className="text-muted" href="https://github.com/felipeantoniob/">
+            <a
+              aria-label="github"
+              className="text-muted"
+              href="https://github.com/felipeantoniob/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsGithub size="1.5rem" />
             </a>
           </li>
           <li className="ms-3">
-            <a aria-label="mail" className="text-muted" href="mailto:felipebuencamino@gmail.com">
+            <a
+              aria-label="mail"
+              className="text-muted"
+              href="mailto:felipebuencamino@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GrMail size="1.5rem" />
             </a>
           </li>
           <li className="ms-3">
-            <a aria-label="telegram" className="text-muted" href="https://t.me/felipeantoniob">
+            <a
+              aria-label="telegram"
+              className="text-muted"
+              href="https://t.me/felipeantoniob"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTelegramPlane size="1.5rem" />
             </a>
           </li>

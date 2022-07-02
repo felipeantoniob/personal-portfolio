@@ -14,90 +14,140 @@ import {
   SiTypescript,
   SiMongodb,
   SiNextdotjs,
-  SiJest,
+  SiGithub,
   SiDocker,
   SiExpress,
+  SiCypress,
+  SiPython,
 } from 'react-icons/si'
 import { Container, Row, Col } from 'react-bootstrap'
+import { motion } from 'framer-motion'
+import { stagger, child } from '../../animations'
 
 const Technologies = () => {
   return (
-    <>
-      <Container
-        className="min-vh-100 d-flex align-items-center justify-content-center mb-5"
-        id="skills"
-      >
-        <Row xs={4} className="fw-bold">
-          <Col xs={12} className="text-center pb-5 mb-5 ">
+    <div id="skills">
+      <motion.div className="text-center pt-5">
+        <h1>SKILLS</h1>
+      </motion.div>
+      <Container className="min-vh-100 d-flex align-items-center justify-content-center mb-5">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          // viewport={{ once: true }}
+          variants={stagger(0.1)}
+          className="row row-cols-2 row-cols-md-4 fw-bold"
+        >
+          {/* <motion.div variants={child} className="col col-12 text-center pb-5 mb-5">
             <h1>SKILLS</h1>
-          </Col>
-          <Col className="text-center py-3">
-            <DiHtml5 size="5rem" />
+          </motion.div> */}
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiHtml5 size="5rem" />
+            </motion.div>
+
             <p>HTML5</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiCss3 size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiCss3 size="5rem" />
+            </motion.div>
+
             <p>CSS3</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiJsBadge size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiJsBadge size="5rem" />
+            </motion.div>
             <p>JAVASCRIPT + ES6</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiTypescript size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiTypescript size="5rem" />
+            </motion.div>
             <p>TYPESCRIPT</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiMongodb size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiMongodb size="5rem" />
+            </motion.div>
             <p>MONGODB</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiExpress size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiExpress size="5rem" />
+            </motion.div>
             <p>EXPRESS</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiReact size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiReact size="5rem" />
+            </motion.div>
             <p>REACT</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiNodejsSmall size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiNodejsSmall size="5rem" />
+            </motion.div>
             <p>NODE JS</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiNextdotjs size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiNextdotjs size="5rem" />
+            </motion.div>
             <p>NEXT JS</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiFirebase size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiFirebase size="5rem" />
+            </motion.div>
             <p>FIREBASE</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiSass size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiSass size="5rem" />
+            </motion.div>
             <p>SASS</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiBootstrap size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiBootstrap size="5rem" />
+            </motion.div>
             <p>BOOTSTRAP</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiJest size="5rem" />
-            <p>JEST</p>
-          </Col>
-          <Col className="text-center py-3">
-            <SiDocker size="5rem" />
-            <p>DOCKER</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiGit size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiCypress size="5rem" />
+            </motion.div>
+            <p>CYPRESS</p>
+          </motion.div>
+          {/* <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiGithub size="5rem" />
+            </motion.div>
+            <p>GITHUB</p>
+          </motion.div> */}
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiGit size="5rem" />
+            </motion.div>
             <p>GIT</p>
-          </Col>
-          <Col className="text-center py-3">
-            <DiTerminal size="5rem" />
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <DiTerminal size="5rem" />
+            </motion.div>
             <p>TERMINAL</p>
-          </Col>
-        </Row>
+          </motion.div>
+          <motion.div variants={child} className="col text-center py-3">
+            <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
+              <SiPython size="5rem" />
+            </motion.div>
+            <p>PYTHON</p>
+          </motion.div>
+        </motion.div>
       </Container>
-    </>
+    </div>
   )
 }
 
