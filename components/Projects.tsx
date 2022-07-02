@@ -2,7 +2,7 @@
 import { Container, Row } from 'react-bootstrap'
 import OldProject from './OldProject'
 import Project from './Project'
-import { projects } from '../../constants/constants'
+import { projects } from '../constants/constants'
 
 const Projects = () => {
   return (

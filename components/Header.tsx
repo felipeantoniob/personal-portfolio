@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 
-import { stagger, child } from '../../animations'
+import { stagger, child } from '../animations'
 
 const Header = () => {
   return (

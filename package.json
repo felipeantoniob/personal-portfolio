@@ -1,5 +1,5 @@
 {
-  "name": "next-portfolio-2022",
+  "name": "personal-portfolio",
   "version": "0.1.0",
   "description": "Felipe Buencamino's personal portfolio website",
   "author": "Felipe Antonio Buencamino",
@@ -13,7 +13,6 @@
     "url": "https://github.com/felipeantoniob/https://github.com/felipeantoniob/next-portfolio-2022/issues"
   },
   "engines": {
-    "node": "^14.17.3",
     "npm": "^6.14.3",
     "yarn": "^1.22.5"
   },

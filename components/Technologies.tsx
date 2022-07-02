@@ -22,7 +22,7 @@ import {
 } from 'react-icons/si'
 import { Container, Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion'
-import { stagger, child } from '../../animations'
+import { stagger, child } from '../animations'
 
 const Technologies = () => {
   return (

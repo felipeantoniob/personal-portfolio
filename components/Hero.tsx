@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { stagger, child } from '../../animations'
+import { stagger, child } from '../animations'
 
 const Hero = () => {
   return (

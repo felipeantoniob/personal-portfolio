@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap'
-import { fadeInUp } from '../../animations/index'
+import { fadeInUp } from '../animations/index'
 import { motion } from 'framer-motion'
 
 const About = (): JSX.Element => {
