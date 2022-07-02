@@ -150,7 +150,7 @@ Project Link: [https://github.com/felipeantoniob/personal-portfolio](https://git
 [stars-url]: https://github.com/felipeantoniob/personal-portfolio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/felipeantoniob/personal-portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/felipeantoniob/personal-portfolio/issues
-[license-shield]: https://img.shields.io/github/license/felipeantoniob/personal-portfolio.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/felipeantoniob/personal-portfolio?style=for-the-badge
 [license-url]: https://github.com/felipeantoniob/personal-portfolio/blob/master/LICENSE.txt
 [github-repo-size-shield]: https://img.shields.io/github/repo-size/felipeantoniob/personal-portfolio?style=for-the-badge
 [last-commit-badge]: https://img.shields.io/github/last-commit/felipeantoniob/personal-portfolio?style=for-the-badge
