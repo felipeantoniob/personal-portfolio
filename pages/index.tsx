@@ -43,7 +43,6 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
-        {/* <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}> */}
         <Hero />
         <About />
         <Projects />
@@ -64,7 +63,6 @@ const Home: NextPage = () => {
             </Button>
           </div>
         </Container>
-        {/* </motion.div> */}
       </main>
       <Footer />
     </>

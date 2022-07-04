@@ -40,8 +40,8 @@ const Project = ({ index, ...project }: ProjectProps) => {
           whileInView="visible"
           transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, scale: 1, x: 0 },
-            hidden: { opacity: 0, scale: 1, x: 60 },
+            visible: { opacity: 1, scale: 1, y: 0 },
+            hidden: { opacity: 0, scale: 1, y: 60 },
           }}
         >
           <div className="my-auto position-relative left-0 top-0 cursor-pointer hover-img">
@@ -71,24 +71,22 @@ const Project = ({ index, ...project }: ProjectProps) => {
           whileInView="visible"
           transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, scale: 1, x: 0 },
-            hidden: { opacity: 0, scale: 1, x: 60 },
+            visible: { opacity: 1, scale: 1, y: 0 },
+            hidden: { opacity: 0, scale: 1, y: 60 },
           }}
         >
           <h2 className="mb-5 fw-bold">{project.title}</h2>
           <h5 className="mb-5">{project.description}</h5>
-          <div className="mb-5">
-            {project.technologies.map((technologies, index) => (
-              <span key={index} className="fw-light font-monospace mb-3 p-2">
-                {technologies}
+          <p className="mb-5">
+            {project.technologies.map((technology, index) => (
+              <span key={index} className=" font-monospace mb-3">
+                {technology} &nbsp;
               </span>
             ))}
-          </div>
+          </p>
           <div>
             <a
-              className={`icon-github text-decoration-none link-light ${
-                index % 2 === 0 ? 'p-2' : 'pe-2'
-              }`}
+              className={`icon-github ${index % 2 === 0 ? 'p-2' : 'pe-2'}`}
               href={project.codeUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -96,9 +94,7 @@ const Project = ({ index, ...project }: ProjectProps) => {
               <FiGithub size="2rem" />
             </a>
             <a
-              className={`icon-external-link text-decoration-none link-light ${
-                index % 2 === 0 ? 'p-s2' : 'p-2'
-              }`}
+              className={`icon-external-link ${index % 2 === 0 ? 'p-s2' : 'p-2'}`}
               href={project.siteUrl}
               target="_blank"
               rel="noopener noreferrer"

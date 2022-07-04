@@ -86,16 +86,16 @@ const Contact = () => {
           className="min-vh-10"
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           variants={{
             visible: { opacity: 1, scale: 1, y: 0 },
-            hidden: { opacity: 0, scale: 1, y: -60 },
+            hidden: { opacity: 0, scale: 1, y: 0 },
           }}
         >
           <Container className="contact-form rounded py-5" id="contact">
             <h1 className="pb-5 text-center">CONTACT ME</h1>
-            <Row className="g-5">
-              <Col>
+            <Row>
+              <Col className="m-3">
                 <Form ref={form} onSubmit={formik.handleSubmit}>
                   <Form.Group className="pb-3">
                     <TextInput label="Name" name="name" type="text" placeholder="John Doe" />
@@ -131,7 +131,7 @@ const Contact = () => {
                   </div>
                 </Form>
               </Col>
-              <Col className="d-flex align-items-start">
+              <Col className="d-flex align-items-start m-3">
                 <div>
                   <p className="lead fs-4">
                     Have an exciting project you need some help with? Feel free to send me a

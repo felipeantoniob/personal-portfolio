@@ -9,7 +9,7 @@ import { GrMail } from 'react-icons/gr'
 const Footer = () => {
   return (
     <footer>
-      <Container className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <Container className="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
         <Col md={4} className="d-flex align-items-center">
           <span className="text-muted">&copy; Designed and Built by Felipe Buencamino, 2022</span>
         </Col>
@@ -47,11 +47,6 @@ const Footer = () => {
               <FaTelegramPlane size="1.5rem" />
             </a>
           </li>
-          {/* <li className="ms-3">
-            <a aria-label="dev" className="text-muted" href="https://dev.to/felipeantoniob">
-              <FaDev size="1.5rem" />
-            </a>
-          </li> */}
         </ul>
         {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
