@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Card, Col, Modal, Row } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 
 interface ProjectModalProps {
   show: boolean

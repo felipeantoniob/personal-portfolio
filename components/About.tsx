@@ -17,7 +17,6 @@ const About = (): JSX.Element => {
               }}
             >
               <h1 className="mb-4">ABOUT ME</h1>
-
               <p className="fs-5">
                 Having the knowledge and skills to create websites and applications from the ground
                 up satisfies a part of me that truly enjoys problem-solving and the production

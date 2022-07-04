@@ -34,13 +34,9 @@ const Technologies = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          // viewport={{ once: true }}
           variants={stagger(0.1)}
           className="row row-cols-2 row-cols-md-4 fw-bold"
         >
-          {/* <motion.div variants={child} className="col col-12 text-center pb-5 mb-5">
-            <h1>SKILLS</h1>
-          </motion.div> */}
           <motion.div variants={child} className="col text-center py-3">
             <motion.div whileHover={{ scale: 1.1 }} className="pb-3">
               <DiHtml5 size="5rem" />

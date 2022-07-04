@@ -1,6 +1,4 @@
-// import { projects } from '../../constants'
 import { Container, Row } from 'react-bootstrap'
-import OldProject from './OldProject'
 import Project from './Project'
 import { projects } from '../constants/constants'
 
@@ -12,7 +10,6 @@ const Projects = () => {
         <Row>
           {projects.map((project, index) => (
             <Project key={project.id} index={index} {...project} />
-            // <OldProject key={project.id} {...project} />
           ))}
         </Row>
       </Container>

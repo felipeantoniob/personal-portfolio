@@ -11,7 +11,9 @@ const Footer = () => {
     <footer>
       <Container className="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
         <Col md={4} className="d-flex align-items-center">
-          <span className="text-muted">&copy; Designed and Built by Felipe Buencamino, 2022</span>
+          <span className="medium-emphasis-text">
+            &copy; Designed and Built by Felipe Buencamino, 2022
+          </span>
         </Col>
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li className="ms-3">

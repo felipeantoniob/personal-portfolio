@@ -1,19 +1,11 @@
 import { useState } from 'react'
-import { Card, Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Image from 'next/image'
 import { MdInfo } from 'react-icons/md'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 
 import ProjectModal from './ProjectModal'
-
-// interface ProjectProps {
-//   title: string
-//   image: string
-//   description: string
-//   codeUrl: string
-//   siteUrl: string
-// }
 
 interface ProjectProps {
   index: number
@@ -44,14 +36,16 @@ const Project = ({ index, ...project }: ProjectProps) => {
             hidden: { opacity: 0, scale: 1, y: 60 },
           }}
         >
-          <div className="my-auto position-relative left-0 top-0 cursor-pointer hover-img">
+          <div
+            className="my-auto position-relative left-0 top-0 cursor-pointer hover-img"
+            onClick={handleShow}
+          >
             <Image
               className="card-img-top"
               src={project.image}
               alt={project.title}
               width={640}
               height={360}
-              onClick={handleShow}
             />
             <div className="position-absolute top-50 start-50 translate-middle text-light icon-info">
               <MdInfo size="4rem" />
@@ -90,6 +84,7 @@ const Project = ({ index, ...project }: ProjectProps) => {
               href={project.codeUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Github"
             >
               <FiGithub size="2rem" />
             </a>
@@ -98,6 +93,7 @@ const Project = ({ index, ...project }: ProjectProps) => {
               href={project.siteUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Live Site"
             >
               <FiExternalLink size="2rem" />
             </a>
